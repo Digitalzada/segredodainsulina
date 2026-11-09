@@ -2,9 +2,9 @@
 
 // ===== CONFIGURE AQUI =====
 const CONFIG = {
-  checkout: "#",                 // [NEED] cole aqui o link do seu checkout
+  checkout: "https://pay.cakto.com.br/rd92aya_1300375",
   price: "R$ 24,90",
-  installments: "ou 3x de R$ 8,30",
+  installments: "ou 3x de R$ 9,22",
   womenCount: "+12.847",         // [NEED] confirme que o número é real antes de publicar
   total: 28
 };
@@ -286,7 +286,7 @@ P[28] = () => {
  <div class="col gap-3">${bonus.map(b => `<div class="bonus"><span class="e">🎁</span><div><div class="a">${b[0]}</div><div class="b">${b[1]}</div></div></div>`).join("")}</div>
  <div class="plan"><div class="hd"><div class="s">Veja</div><div class="b m">Tudo o que você recebe</div><div class="d">Acesso liberado até ${date}</div></div><div class="bd">
   ${inc.map(i => `<div class="inc"><span class="c">${i[1] ? "🎁" : "✅"}</span><span>${i[0]}</span></div>`).join("")}
-  <div class="price"><div class="por">PAGAMENTO ÚNICO</div><div class="v">${CONFIG.price}</div><div class="p">${CONFIG.installments}</div></div></div></div>
+  <div class="price"><div class="por">POR APENAS</div><div class="v">${CONFIG.price}</div><div class="p">${CONFIG.installments}</div></div></div></div>
  <a class="btn-cta" href="${CONFIG.checkout}" data-checkout>QUERO COMEÇAR MINHA ROTINA</a>
  <div class="guar"><div class="seal">GARANTIA<br>30<br>DIAS</div><div class="t">Teste por 30 dias, sem risco</div>
   <p>A lei já garante 7 dias. Nós damos 30. Se a rotina não for para você, devolvemos cada centavo.</p><p>Basta pedir. Sem perguntas e sem burocracia.</p></div>
