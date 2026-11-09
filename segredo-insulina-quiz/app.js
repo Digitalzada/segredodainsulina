@@ -3,8 +3,8 @@
 // ===== CONFIGURE AQUI =====
 const CONFIG = {
   checkout: "https://pay.cakto.com.br/rd92aya_1300375",
-  price: "R$ 24,90",
-  installments: "ou 3x de R$ 9,22",
+  price: "R$ 14,90",
+  installments: "ou 3x de R$ 5,52",
   womenCount: "+12.847",         // [NEED] confirme que o número é real antes de publicar
   total: 28
 };
@@ -53,7 +53,7 @@ P[1] = () => `
 <div class="cover">
   <div class="cover-logo"><img class="logo-img" src="${A.logo}" alt="Segredo da Insulina"></div>
   <div class="cover-body">
-    <h1>Barriga teimosa depois dos 40? Conheça a mistura de liquidificador que custa <span class="grad accent">R$10</span></h1>
+    <h1>Cansada de tentar várias receitas sem conseguir diminuir a pochete? Conheça essa mistura de liquidificador que custa apenas <span class="grad accent">R$10</span></h1>
     <p class="lead">Responda a 2 minutos de perguntas e receba uma rotina de 21 dias feita para o seu corpo.</p>
     <div class="cover-photo">
       <div class="glow"></div>
@@ -88,17 +88,17 @@ P[5] = () => {
   const txt = labels.length > 1 ? labels.slice(0, -1).join(", ") + " e " + labels.slice(-1) : labels[0];
   return `<div class="alone fade-in"><div class="round">🤝</div>
   <h2 class="h2" style="margin-bottom:1rem">Se o ponteiro da balança não obedece, a falha não é sua.</h2>
-  <div class="card-stat"><div class="b" style="font-size:1.125rem">Com a idade, os hormônios que controlam a fome e o armazenamento de gordura respondem de outro jeito.</div>
-  <p class="a" style="margin-top:1rem;margin-bottom:0">Por isso o acúmulo ${txt} costuma persistir mesmo com dieta.</p></div>
+  <div class="card-stat"><div class="b" style="font-size:1.125rem">Se você sente que faz de tudo para emagrecer, mas a balança insiste em não mudar, talvez a dificuldade não esteja na sua dedicação, e sim nos hormônios que controlam a fome, a saciedade e a forma como o seu corpo armazena gordura.</div>
+  <p class="a" style="margin-top:1rem;margin-bottom:0">É comum o acúmulo de gordura ${txt} continuar mesmo com dieta, e existe um jeito de trabalhar isso de dentro para fora.</p></div>
   <button class="btn-quiz" data-next>Faz sentido, continuar</button></div>`;
 };
 
-P[6] = () => `<div class="pad fade-in"><h2 class="h2">Por que as dietas de antes pararam de funcionar</h2>
+P[6] = () => `<div class="pad fade-in"><h2 class="h2">Por que fazer dieta nem sempre funciona</h2>
 <div class="col gap-3">
  <div class="tick-row"><span class="c">1</span><span class="t">Você come menos e o corpo reage gastando menos energia.</span></div>
  <div class="tick-row"><span class="c">2</span><span class="t">A fome volta forte à noite e a força de vontade perde a briga.</span></div>
- <div class="tick-row"><span class="c">3</span><span class="t">O inchaço esconde o progresso e a motivação cai.</span></div></div>
-<p class="sub" style="margin-top:.5rem">Uma rotina simples, com alimentos de mercado, ataca esses três pontos juntos.</p>
+ <div class="tick-row"><span class="c">3</span><span class="t">O inchaço esconde o progresso, e ver a balança parada tira a motivação.</span></div></div>
+<p class="sub" style="margin-top:.5rem">Uma rotina simples, com alimentos de mercado, foi pensada para ajudar nesses três pontos.</p>
 <button class="btn-quiz" data-next>Quero entender como</button></div>`;
 
 P[7] = () => `<div class="pad fade-in" style="align-items:center;gap:1.5rem"><h2 class="h2 h2x">Como posso te chamar?</h2>
@@ -114,9 +114,9 @@ P[9] = () => `<div class="pad fade-in"><h2 class="h2">Você já tentou <span cla
 <div class="col gap-3" style="margin-top:1rem">${TRIED.map(o => opt("appearance", o)).join("")}</div></div>`;
 
 P[10] = () => `<div class="pad-sm center items-center fade-in" style="gap:1.5rem"><div style="font-size:3rem">🧬</div>
-<h2 class="h2-xl"><span class="grad">${nm()}</span>, seu corpo aprendeu a se proteger.</h2>
-<p class="muted" style="font-size:1rem">Depois de várias dietas, ele passa a segurar gordura e a pedir comida. Isso é biologia, e não falta de disciplina.</p>
-<p style="font-size:1rem;font-weight:600">O Segredo da Insulina trabalha o sinal de saciedade e o inchaço, para você parar de lutar contra a fome.</p>
+<h2 class="h2-xl"><span class="grad">${nm()}</span>, o corpo costuma se proteger quando a gente tenta emagrecer.</h2>
+<p class="muted" style="font-size:1rem">Ele segura gordura e pede comida. Isso é biologia, e não falta de disciplina.</p>
+<p style="font-size:1rem;font-weight:600">O Segredo da Insulina foi pensado para ajudar no sinal de saciedade e no inchaço, para você parar de lutar contra a fome.</p>
 <button class="btn-quiz" data-next>Entendi, continuar</button></div>`;
 
 const BARR = [{ value: "dinheiro", emoji: "💸", label: "Já gastei dinheiro e não tive resultado", small: 1 }, { value: "financeiro", emoji: "💰", label: "Tratamentos caros não cabem no meu bolso", small: 1 }, { value: "constancia", emoji: "📉", label: "Começo e não consigo manter", small: 1 }, { value: "fome", emoji: "🍫", label: "Sinto fome e acabo cedendo", small: 1 }, { value: "tempo", emoji: "⏰", label: "Não tenho tempo para dietas", small: 1 }];
@@ -126,7 +126,7 @@ P[11] = () => `<div class="pad fade-in"><h2 class="h2">O que mais te trava hoje?
 
 P[12] = () => `<div class="pad-sm center items-center fade-in" style="gap:1.5rem"><div style="font-size:3rem">🥤</div>
 <h2 class="h2-xl">Canetas como o Mounjaro passam de R$1.000 por mês e exigem receita.</h2>
-<div class="box-hl"><p>O <span class="grad accent">Segredo da Insulina</span> é um caminho natural e acessível: a base sai por cerca de <span class="grad accent">R$10</span> e fica pronta no liquidificador.</p>
+<div class="box-hl"><p>O <span class="grad accent">Segredo da Insulina</span> é um caminho natural e acessível: a base sai por cerca de <span class="grad accent">R$10</span> em ingredientes e fica pronta no liquidificador.</p>
 <p class="s">Sem ingrediente importado e sem horário rígido. Se você usa algum medicamento, siga o acompanhamento do seu médico e combine a rotina com ele.</p></div>
 <button class="btn-quiz" data-next>Continuar</button></div>`;
 
@@ -168,7 +168,7 @@ P[21] = () => {
   const line = pts.map((p, i) => `${i ? "L" : "M"}${p[0]},${p[1]}`).join(" ");
   return `<div class="pad-sm center items-center fade-in"><h2 class="h2-xl"><span class="grad">${nm()}</span>, a sua meta de ${loss} kg é possível com constância.</h2>
 <div class="box-hl"><div class="goal-box"><div class="col items-center"><span class="v">${state.weight}kg</span><span class="l">hoje</span></div><span class="arrow">→</span><div class="col items-center"><span class="v p">${state.desiredWeight}kg</span><span class="l">sua meta</span></div></div>
-<div class="goal-meta"><span>Falta pouco: ${loss} kg até chegar lá</span></div></div>
+<div class="goal-meta"><span>Seu ponto de chegada: perder ${loss} kg</span></div></div>
 <div class="chart-card"><p class="cap">Projeção ilustrativa</p>
 <div class="chart" id="chart"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="hsl(152 60% 34%)" stop-opacity=".3"/><stop offset="100%" stop-color="hsl(152 60% 34%)" stop-opacity=".02"/></linearGradient></defs>
 <path class="area" d="${line} L95,100 L5,100 Z" fill="url(#cg)"/><path class="line" d="${line}" fill="none" stroke="hsl(152 60% 34%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -186,7 +186,7 @@ P[22] = () => `<div class="pad-sm items-center fade-in">
 <div class="col gap-3" style="width:100%">${COMMIT.map(o => opt("commitment", o)).join("")}</div></div>`;
 
 P[23] = () => `<div class="pad fade-in"><h2 class="h2">Qual resultado você quer sentir <span class="grad">primeiro</span>?</h2>
-<div class="col gap-3" style="margin-top:1rem">${GOALS.map(g => opt("firstResult", { value: g[0], emoji: g[1], label: g[2], small: 1 })).join("")}</div></div>`;
+<div class="col gap-3" style="margin-top:1rem">${(GOALS.filter(g => state.goals.includes(g[0])).length ? GOALS.filter(g => state.goals.includes(g[0])) : GOALS).map(g => opt("firstResult", { value: g[0], emoji: g[1], label: g[2], small: 1 })).join("")}</div></div>`;
 
 const ANALYSIS = [["Calculando sua faixa de peso", "⚖️", 1800], ["Considerando sua idade", "🎂", 1500], ["Cruzando suas respostas", "🔍", 1600], ["Escolhendo as receitas ideais", "✨", 1400]];
 P[24] = () => `<div class="analysis fade-in"><div class="head"><div class="brain pulse" style="font-size:2.25rem">🧠</div><h2>Preparando sua análise, <span style="color:hsl(var(--primary))">${nm()}</span>...</h2><p>Estamos organizando suas respostas</p></div>
@@ -225,6 +225,7 @@ P[25] = () => {
     "Seu primeiro objetivo: " + (FOCUS[state.firstResult] || "Perder peso").toLowerCase(),
     state.bloating === "sempre" ? "Inchaço frequente, que atrapalha a leitura da balança" : "Meta de " + Math.max(0, state.weight - state.desiredWeight) + " kg para chegar ao seu peso desejado",
     state.sleep === "menos-5" || state.sleep === "5-7" ? "Sono curto, que aumenta a fome do dia seguinte" : "Sono em boa faixa, um ponto a seu favor",
+    ({ fora: "Receita rápida, para levar na rotina de quem trabalha fora", home: "Horários flexíveis, que cabem no home office", casa: "Passos curtos, que cabem entre a casa e a família", corrida: "Versão rápida, para uma rotina corrida e irregular" })[state.routine[0]] || "Rotina simples, para caber no seu dia",
     state.barriers.includes("fome") ? "Fome que vence a disciplina, o ponto principal da sua rotina" : "Constância: a rotina será simples para caber no seu dia"
   ];
   const ben = ["Mistura de R$10 feita no liquidificador", "Rotina para desinchar nos primeiros dias", "Estratégias para controlar a fome sem sofrimento", "Receitas para manter o resultado sem efeito sanfona", "Sobremesas que cabem no plano"];
